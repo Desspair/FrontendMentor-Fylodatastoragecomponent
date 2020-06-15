@@ -1,0 +1,183 @@
+/* COLORES */
+
+$Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+$PaleBlue: hsl(243, 100%, 93%);
+$GrayishBlue: hsl(229, 7%, 55%);
+$DarkBlue: hsl(228, 56%, 26%);
+$VeryDarkBlue: hsl(229, 57%, 11%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/bg-mobile.svg) no-repeat;
+  background-size: 100vw 100vh;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+
+.contenedorGeneral {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  background-color: $DarkBlue;
+  width: 300px;
+  height: 185px;
+  border-radius: 8px 90px 8px 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 .logo {
+  width: 135px;
+  height: 40px;
+  margin: 40px 40px 30px;
+}
+
+.container1 .icon {
+  display: flex;
+  width: auto;
+  height: 40px;
+  margin-left: 40px;
+}
+
+.icon span {
+  width: 45px;
+  height: 45px;
+  background-color: $VeryDarkBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.container2 {
+  background-color: $DarkBlue;
+  width: 300px;
+  height: 150px;
+  margin-top: 15px;
+  color: $PaleBlue;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0;
+  border-radius: 8px;
+}
+
+.container2 p span {
+  font-weight: 700;
+}
+
+.container2 .barraStorage {
+  background-color: hsl(229, 57%, 11%);
+  width: 85%;
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.barraStorage #usado {
+  position: absolute;
+  /* background-color: hsl(6, 100%, 80%); to hsl(335, 100%, 65%);*/
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  width: 70%;
+  height: 12px;
+
+  border-radius: 10px;
+  margin-left: 2px;
+}
+
+#label {
+  text-align: right;
+  color: white;
+  font-size: 9.5px;
+  padding: 1.5px;
+}
+
+.almacenamiento {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.almacenamiento span {
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.espacioRestante {
+  background: white;
+  color: black;
+  width: 145px;
+  height: 55px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  left: 5px;
+}
+
+.espacioRestante div {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.espacioRestante span {
+  color: $GrayishBlue;
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+  margin-left: 10px;
+}
+
+/*------------------   ATTRIBUTION   ------------------ */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background: url(../images/bg-desktop.svg) no-repeat;
+    background-color: $VeryDarkBlue;
+    background-position: bottom;
+  }
+
+  .contenedorGeneral {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container1 {
+    margin-right: 20px;
+  }
+}
